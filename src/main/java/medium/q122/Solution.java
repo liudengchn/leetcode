@@ -1,4 +1,4 @@
-package q122;
+package medium.q122;
 
 /**
  * 买卖股票的最佳时机2

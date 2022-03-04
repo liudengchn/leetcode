@@ -1,4 +1,4 @@
-package q887;
+package hard.q887;
 
 import java.util.Arrays;
 

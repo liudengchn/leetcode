@@ -1,4 +1,4 @@
-package q309;
+package medium.q309;
 
 /**
  * 最佳买卖股票时机-含冷冻期

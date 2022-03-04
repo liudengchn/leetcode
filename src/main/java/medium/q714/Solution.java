@@ -1,4 +1,4 @@
-package q714;
+package medium.q714;
 
 /**
  * 买卖股票的最佳时机，含手续费

@@ -1,4 +1,4 @@
-package q120;
+package medium.q120;
 
 import java.util.ArrayList;
 import java.util.List;

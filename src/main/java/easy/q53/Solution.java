@@ -1,4 +1,4 @@
-package q53;
+package easy.q53;
 
 /**
  * @author liudeng

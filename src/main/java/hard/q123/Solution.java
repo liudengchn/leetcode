@@ -1,4 +1,4 @@
-package q123;
+package hard.q123;
 
 /**
  * 买卖股票的最佳时机3

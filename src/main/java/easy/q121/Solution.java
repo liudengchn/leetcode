@@ -1,4 +1,4 @@
-package q121;
+package easy.q121;
 
 /**
  * 买卖股票的最佳时机

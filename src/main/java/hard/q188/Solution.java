@@ -1,4 +1,4 @@
-package q188;
+package hard.q188;
 
 /**
  * 买卖股票的最佳时机4

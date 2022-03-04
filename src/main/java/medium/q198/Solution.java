@@ -1,4 +1,4 @@
-package q198;
+package medium.q198;
 
 /**
  * @author liudeng

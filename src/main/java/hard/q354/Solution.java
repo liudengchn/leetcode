@@ -1,4 +1,4 @@
-package q354;
+package hard.q354;
 
 import java.util.Arrays;
 import java.util.Comparator;

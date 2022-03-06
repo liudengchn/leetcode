@@ -1,4 +1,4 @@
-package q11;
+package medium.q11;
 
 /**
  * @ClassName Solution

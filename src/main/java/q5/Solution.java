@@ -15,6 +15,63 @@ public class Solution {
         System.out.println(longestPalindrome(s));
     }
 
+    /**
+     * 动态规划
+     * @param s
+     * @return
+     */
+    public static String longestPalindrome1(String s) {
+        int length = s.length();
+        if (length < 2) {
+            return s;
+        }
+
+        int maxLength = 1;
+        int startIndex = 0;
+
+        // 1.定义状态方程
+        boolean[][] dp = new boolean[length][length];
+        // 2.定义初始状态
+        for (int i = 0; i < length; i++) {
+            dp[i][i] = true;
+        }
+
+        char[] chars = s.toCharArray();
+
+        for (int L = 2; L <= length; L++) {
+            for (int i = 0; i < length; i++) {
+                int j = L + i - 1;
+
+                if (j >= length) {
+                    break;
+                }
+
+                if (chars[i] != chars[j]) {
+                    dp[i][j] = false;
+                } else {
+                    if (j - i < 3) {
+                        dp[i][j] = true;
+                    } else {
+                        // 定义状态转移方程
+                        dp[i][j] = dp[i + 1][j - 1];
+                    }
+                }
+
+                // 定义输出
+                if (dp[i][j] && j - i + 1 > maxLength) {
+                    maxLength = j - i + 1;
+                    startIndex = i;
+                }
+            }
+        }
+        return s.substring(startIndex, startIndex + maxLength);
+    }
+
+    /**
+     * 自己实现
+     * @param s
+     * @return
+     */
     public static String longestPalindrome(String s) {
         String[] strings = s.split("");
         int strLength = strings.length;
